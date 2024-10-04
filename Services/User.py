@@ -10,7 +10,7 @@ class User:
             return True
         return False
     def validemail(self):
-        if isinstance(self.name,str)and re.fullmatch(r"[^@]+@[^@]+\.[^@\.]{2,}",self.email) :
+        if isinstance(self.name,str)and re.fullmatch(r"[A-Za-z0-9_]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]{2,}",self.email) :
             return True
         return False
     def validname(self):
